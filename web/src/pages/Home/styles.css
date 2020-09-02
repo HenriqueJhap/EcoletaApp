@@ -1,0 +1,111 @@
+#page-home {
+  height: 100vh;
+
+  background: url('../../assets/home-background.svg') no-repeat ;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 80rem;
+}
+
+#page-home .content {
+  width: 100%;
+  height: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#page-home .content header {
+  margin: 4.4rem 0 0;
+}
+
+#page-home .content main {
+  flex: 1;
+  max-width: 560px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#page-home .content main h1 {
+  font-size: 5.4rem;
+  color: var(--title-color);
+}
+
+#page-home .content main p {
+  font-size: 2.4rem;
+  margin-top: 2.4rem;
+  line-height: 3.8rem;
+}
+
+#page-home .content main a {
+  width: 100%;
+  max-width: 36rem;
+  height: 7.2rem;
+  background: var(--primary-color);
+  border-radius: 8px;
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  margin-top: 4rem;
+}
+
+#page-home .content main a span {
+  display: block;
+  background: rgba(0, 0, 0, 0.08);
+  width: 7.2rem;
+  height: 7.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+#page-home .content main a span svg {
+  color: #FFF;
+  width: 2rem;
+  height: 2rem;
+}
+
+#page-home .content main a strong {
+  flex: 1;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+#page-home .content main a:hover {
+  background: #2FB86E;
+}
+
+@media(max-width: 900px) {
+  #page-home .content {
+    align-items: center;
+    text-align: center;
+  }
+
+  #page-home .content header {
+    margin: 4.8rem auto 0;
+  }
+
+  #page-home .content main {
+    align-items: center;
+  }
+
+  #page-home .content main h1 {
+    font-size: 4.2rem;
+  }
+
+  #page-home .content main p {
+    font-size: 2.4rem;
+  }
+}
